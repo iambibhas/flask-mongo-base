@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>{% block title %}{% endblock %} - SiteName</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	{% block fbmeta %}
+	{% endblock %}
+	<!-- 1140px Grid styles for IE -->
+	<!--[if lte IE 9]>
+	<link rel="stylesheet" href="css/ie.css" type="text/css" media="screen" />
+	<![endif]-->
+
+	<!-- The 1140px Grid - http://cssgrid.net/ -->
+	<link rel="stylesheet" href="/static/css/1140.css" type="text/css" media="screen" />
+
+	<!-- Your styles -->
+	<link rel="stylesheet" href="/static/css/styles.css" type="text/css" media="screen" />
+
+	<!--css3-mediaqueries-js - http://code.google.com/p/css3-mediaqueries-js/ - Enables media queries in some unsupported browsers-->
+	<script type="text/javascript" src="/static/js/css3-mediaqueries.js"></script>
+
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+	<script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript"></script>
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+	<div class="container">
+		<div id="head" class="row">
+			<div class="twocol">
+				<h2>
+					<a href="/">SiteName</a>
+				</h2>
+			</div>
+			<div class="tencol last" id="nav-menu">
+				<ul>
+					<li>
+						<a href="#">Menu Item</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div style="clear:both"></div>
+		{% block content %}
+		{% endblock %}
+		<div class="row" id="footer">
+			<div class="twelvecol">&copy; SiteName 2012 (A one night project)</div>
+		</div>
+	</div>
+
+</body>
+
+</html>

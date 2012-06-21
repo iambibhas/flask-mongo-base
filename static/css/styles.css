@@ -1,0 +1,153 @@
+/* ============================== */
+/* ! Layout for desktop version   */
+/* ============================== */
+
+	body {
+		font-family: 'PT Sans Narrow', sans-serif;
+		font-size: 16px;
+	}
+
+	p {
+		padding: 5px;
+	}
+
+	h1, h2 {
+		color:#15A320;
+	}
+
+	#newform {
+		padding: 30px 30px 0;
+	}
+
+	#wufoo-x7x3q1 {
+		margin: 20px 0px 40px 0px;
+	}
+
+	#head {
+		position: fixed;
+		right: 0;
+		left: 0;
+		z-index: 1030;
+		margin-bottom: 0;
+		top: 0;
+		min-height: 40px;
+		background-color: #2C2C2C;
+		text-align: center;
+		color: #efefef;
+	}
+
+	#head div {
+		line-height: 40px;
+	}
+	
+	#nav-menu li{
+		float: right;
+		text-align: center;
+		padding: 0px 20px;
+		line-height: 40px;
+		width: 80px;
+		list-style:none;
+		margin-right: 10px;
+	}
+
+	#nav-menu li:hover {
+		background: #666;
+	}
+
+	#head a, #head a:hover {
+		color: #efefef;
+		text-decoration: none;
+	}
+
+	#content {
+		margin: 5% auto 0;
+	}
+
+	.entry {
+		margin: 10px;
+		padding: 10px;
+		border: 1px solid #aaa;
+		-moz-box-shadow: 5px 5px 5px #888;
+		-webkit-box-shadow: 5px 5px 5px #888;
+		box-shadow: 5px 5px 5px #888;
+	}
+
+	#content a, #content a:hover{
+		color: #333;
+		text-decoration: none;
+	}
+
+	a.email {
+		color: #15A320 !important;
+	}
+
+	.headline {
+		font-weight: bold;
+	}
+
+	.name {
+		font-size: 0.8em;
+		margin-bottom: 10px;
+	}
+
+	.expert {
+		margin: 10px 0px;
+	}
+
+	.expert span {
+		font-size: 0.8em;
+		background: #EEE;
+		padding: 3px;
+		float: left;
+		border-radius: 4px;
+		margin: 2px ;
+	}
+
+	.description {
+		border: 1px solid #aaa;
+		padding: 20px;
+		margin: 20px 0px 20px 0px;
+	}
+
+	#footer {
+		padding: 30px;
+	}
+
+	.share span {
+		padding: 0px 3px;
+	}
+	
+
+/* ============================= */
+/* ! Layout for mobile version   */
+/* ============================= */
+
+@media handheld, only screen and (max-width: 767px) {
+
+	body {
+		
+	}
+
+	#nav-menu li {
+		float: none;
+		margin: 0 auto;
+	}
+
+	#content {
+		margin: 15% auto;
+	}
+}
+
+
+/* ========================================== */
+/* ! Provide higher res assets for iPhone 4   */
+/* ========================================== */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) { 
+
+/*	.logo {
+		background: url(logo2x.jpg) no-repeat;
+		background-size: 212px 303px;
+	}*/
+
+}
